@@ -1,0 +1,16 @@
+
+- name: Install NGINX on RHEL/CentOS
+  hosts: mongodb
+  become: yes  # Run as root
+
+  tasks:
+    - name: Install NGINX using YUM
+      yum:
+        name: nginx
+        state: present
+
+    - name: Start and Enable NGINX
+      systemd:
+        name: nginx
+        state: started
+        enabled: yes
