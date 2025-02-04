@@ -1,0 +1,17 @@
+- name: this is to print variable
+  hosts: mongodb
+  #this is play level variables in map
+  vars: 
+   course: Devops with aws
+   name: Munikumar
+   duration: 3months
+
+  tasks:
+  - name: print hello world
+    ansible.builtin.debug:
+    msg: "hello i am learning ansible"
+
+  - name: print message dynamically
+    ansible.builtin.debug:
+    msg: "this is {{name}} learning {{course}} has duration of {{duration}}"
+  
