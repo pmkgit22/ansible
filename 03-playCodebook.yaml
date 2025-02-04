@@ -8,7 +8,8 @@
 
   tasks:
   - name: print hello world
-    ansible.builtin.debug:
+    #ansible.builtin.debug:
+    debug:
      msg: "hello i am learning ansible"
 
   - name: print message dynamically
