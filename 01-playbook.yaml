@@ -1,0 +1,9 @@
+#play book is always list of plays should start with hyphen -
+- name: ping th node
+  hosts: mongodb
+
+  #this is the list of tasks 
+  tasks: 
+  - name: ping the server
+    # this is the map
+    ansible.builtin.ping:

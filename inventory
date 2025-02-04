@@ -1,0 +1,24 @@
+This file is not mandatory but recommended to maintain the list of nodes connected to ansible server
+[mongodb]
+roboshell-us-dev-db-mmongodb-1.munidevops.shop
+
+[mysqldb]
+roboshell-us-dev-db-mysql-1.munidevops.shop
+roboshell-us-dev-db-mysql-1.munidevops.shop
+
+[cart]
+roboshell-us-dev-db-cart-1.munidevops.shop
+roboshell-us-dev-db-cart-2.munidevops.shop
+roboshell-us-dev-db-cart-3.munidevops.shop
+
+[user]
+roboshell-us-dev-db-user-1.munidevops.shop
+roboshell-us-dev-db-user-2.munidevops.shop
+roboshell-us-dev-db-user-3.munidevops.shop
+
+[db:children]
+mongodb
+mysqldb
+[app:children]
+cart
+user
