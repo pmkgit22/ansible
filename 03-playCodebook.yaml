@@ -9,9 +9,9 @@
   tasks:
   - name: print hello world
     ansible.builtin.debug:
-    msg: "hello i am learning ansible"
+     msg: "hello i am learning ansible"
 
   - name: print message dynamically
     ansible.builtin.debug:
-    msg: "this is {{name}} learning {{course}} has duration of {{duration}}"
+     msg: "this is {{name}} learning {{course}} has duration of {{duration}}"
   
