@@ -5,9 +5,9 @@
     prompt: please enter user name
     private: false #you can see the value
   - name: PASSWORD
-    prompt: please3 enter password
+    prompt: please enter password
     private: true
   tasks: 
   - name: 
     ansible.builtin.debug:
-      msg: "username: {{USERNAME}} , paswswor: {{PASSWORD}}"
+      msg: "Entered username: {{USERNAME}} , Entered paswsword: {{PASSWORD}}"

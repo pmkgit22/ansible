@@ -1,0 +1,16 @@
+- name: variables at task level
+  hosts: localhost
+  vars: 
+    MONEY: 100000
+    LAND: 10Acres
+  # showing uinheretence concept like method overiding concept
+  tasks: 
+  - name: printing variable  task level
+    vars:
+      MONEY: 250000
+      HOUSE: 3houses
+    ansible.builtin.debug:
+      msg: "I bought {{HOUSE}} for cost {{MONEY}}"
+  - name: Printing variable of inhereted
+    ansible.builtin.debug:
+      msg: "I want to buy land {{LAND}} for the price of {{MONEY}}"
