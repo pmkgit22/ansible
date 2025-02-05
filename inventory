@@ -6,6 +6,7 @@ roboshell-us-dev-db-mmongodb-1.munidevops.shop
 [mongodb:vars]
 MONGO_USERNAME=mongoadmin
 MONGO_DB=catagories
+PRENAME=Inventorylevel
 
 [mysqldb]
 roboshell-us-dev-db-mysql-1.munidevops.shop
