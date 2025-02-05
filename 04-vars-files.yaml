@@ -1,8 +1,8 @@
 - name: 
   hosts: localhost # this will stay in ansible server itself
   vars_files:
-  - variablefile.yaml
+   - variablefile.yaml
   tasks: 
-  - name: print the varable from files
-    ansible.builtin.debug:
-      msg: "This is the {{NAME}} learning the course {{COURSE}} which has the duration of {{DURATION}}"
+   - name: print the varable from files
+     ansible.builtin.debug:
+       msg: "This is the {{NAME}} learning the course {{COURSE}} which has the duration of {{DURATION}}"
