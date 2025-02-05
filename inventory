@@ -2,6 +2,10 @@ This file is not mandatory but recommended to maintain the list of nodes connect
 [mongodb]
 roboshell-us-dev-db-mmongodb-1.munidevops.shop
 
+[mongodb:vars]
+MONGO_USERNAME=mongoadmin
+MONGO_DB=catagories
+
 [mysqldb]
 roboshell-us-dev-db-mysql-1.munidevops.shop
 roboshell-us-dev-db-mysql-1.munidevops.shop
