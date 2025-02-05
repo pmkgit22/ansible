@@ -1,3 +1,6 @@
+192.203.0.7
+191.292.0.8
+
 [mongodb]
 roboshell-us-dev-db-mmongodb-1.munidevops.shop
 [mongodb:vars]
@@ -24,4 +27,3 @@ mysqldb
 [app:children]
 cart
 user
-catologue
