@@ -1,17 +1,19 @@
 - name: Testing variable precedence
   hosts: mongodb
-  # vars: 
-  #   PRENAME: ThisisPlayLevel
-  # vars_files: 
-  # - variablefile.yaml
-  # vars_prompt: 
-  # - name: PRENAME
-  #   prompt: please enter precedence username
-  #   private: false #you can see the value
+  vars: 
+    PRENAME: ThisisPlayLevel
+  vars_files: 
+  - variablefile.yaml
+  vars_prompt: 
+  - name: PRENAME
+    prompt: please enter precedence username
+    private: false #you can see the value
   tasks: 
   - name: Printing the value with prioritize
+    vars: 
+     PRENAME: ThisisPlayLevel
     ansible.builtin.debug:
-      msg: "this is the value of priority:  {{PRENAME}}"
+       msg: "this is the value of priority:  {{PRENAME}}"
       #Priority Level
 # 1. command level argument variable
 # 2.  thsecond is File level
