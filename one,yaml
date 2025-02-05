@@ -1,0 +1,21 @@
+- name: Ensure directory 'muni' exists
+  hosts: localhost
+  become: yes  # Run as root
+  # /home/centos/ansible/muni
+
+  tasks:
+    - name: Check if directory 'muni' exists
+      ansible.builtin.stat:
+        path: /home/centos/ansible/muni  # Replace with your desired directory path
+      register: dir_check
+
+    - name: Create directory 'muni' if not exists
+      ansible.builtin.file:
+        path: /home/centos/ansible/muni
+        state: directory
+        #mode: '0755'  # Set permissions (optional)
+      when: not dir_check.stat.exists  # Only create if directory does not exist
+
+    - name: Display message
+      ansible.builtin.debug:
+        msg: "Directory '/path/to/muni' has been created or already exists."
