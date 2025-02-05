@@ -1,6 +1,6 @@
 - name: Testing variable precedence
   hosts: mongodb
-  Vars: 
+  vars: 
     PRENAME: ThisisPlayLevel
   vars_files: 
     - variablefile.yaml
