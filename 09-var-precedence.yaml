@@ -16,6 +16,9 @@
        msg: "this is the value of priority:  {{PRENAME}}"
       #Priority Level
 # 1. command level argument variable
-# 2.  thsecond is File level
-# 3. Prompt level
-# 4. play level
+# 2.  Task level
+# 3.  file level
+# 4. prompt level
+# 5.  play level
+# 6. inventory
+# 7. Roles
