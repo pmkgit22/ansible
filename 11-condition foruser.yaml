@@ -1,6 +1,6 @@
 - name: Ensure 'roboshop' user exists
   hosts: localhost #all
-  become: yes  # Run as root
+  
 
   tasks:
     - name: Check if user 'roboshop' exists
@@ -9,7 +9,8 @@
       ignore_errors: yes  # Prevent failure if the user does not exist
 
     - name: Create user 'roboshop' if not exists
-      ansible.builtin.user:
+      become: yes  # Run as root
+      ansible.builtin.user:      
         name: roboshop
         state: present
         #shell: /bin/bash
