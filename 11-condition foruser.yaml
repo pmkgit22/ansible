@@ -19,6 +19,7 @@
     - name: Display message
       ansible.builtin.debug:
         msg: "User 'roboshop' has been created .."
+      when: user_check.rc != 0  # Only createit will display if user does not exist
     - name: Display message
       ansible.builtin.debug:
         msg: "User 'roboshop' is already exists."
