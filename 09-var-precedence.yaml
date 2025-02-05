@@ -1,7 +1,7 @@
 - name: Testing variable precedence
   hosts: mongodb
-  vars: 
-    PRENAME: ThisisPlayLevel
+  # vars: 
+  #   PRENAME: ThisisPlayLevel
   # vars_files: 
   # - variablefile.yaml
   # vars_prompt: 
@@ -16,3 +16,4 @@
 # 1. command level argument variable
 # 2.  thsecond is File level
 # 3. Prompt level
+# 4. play level
