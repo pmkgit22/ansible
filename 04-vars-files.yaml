@@ -1,6 +1,6 @@
 - name: 
   hosts: localhost # this will stay in ansible server itself
-  var_files:
+  vars_files:
   - variablefile.yaml
   tasks: 
   - name: print the varable from files
