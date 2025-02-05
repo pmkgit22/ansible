@@ -1,0 +1,12 @@
+- name:  the values from prompt
+  hosts: localhost # this will excute in ansible server itself
+  vars_prompt: 
+  - name: USERNAME
+    prompt: please enter user name
+    private: false #you can see the value
+  - name: PASSWORD
+    prompt: please3 enter password
+    private: true
+  tasks: 
+    ansible.builtin.debug:
+      msg: "username: {{USERNAME}} , paswswor: {{PASSWORD}}"
