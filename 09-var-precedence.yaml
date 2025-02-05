@@ -2,8 +2,8 @@
   hosts: mongodb
   vars: 
     PRENAME: ThisisPlayLevel
-  vars_files: 
-  - variablefile.yaml
+  # vars_files: 
+  # - variablefile.yaml
   vars_prompt: 
   - name: PRENAME
     prompt: please enter precedence username
@@ -12,3 +12,7 @@
   - name: Printing the value with prioritize
     ansible.builtin.debug:
       msg: "this is the value of priority:  {{PRENAME}}"
+      #Priority Level
+# 1. command level argument variable
+# 2.  thsecond is File level
+# 3. 
