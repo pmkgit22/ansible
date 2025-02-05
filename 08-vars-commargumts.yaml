@@ -1,0 +1,6 @@
+- name: enter the variables from command line
+  hosts: localhost
+  tasks: 
+  - name: variable through command arguments
+    ansible.builtin.debug:
+      msg: "This is the argument entered the course : {{COURSE}}"
