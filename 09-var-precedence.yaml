@@ -3,12 +3,12 @@
   vars: 
     PRENAME: ThisisPlayLevel
   vars_files: 
-    - variablefile.yaml
+  - variablefile.yaml
   vars_prompt: 
   - name: PRENAME
     prompt: please enter precedence username
     private: false #you can see the value
   tasks: 
   - name: Printing the value with prioritize
-      ansible.builtin.debug:
-        msg: "this is the value of priority:  {{PRENAME}}"
+    ansible.builtin.debug:
+      msg: "this is the value of priority:  {{PRENAME}}"
