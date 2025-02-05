@@ -2,7 +2,7 @@
   hosts: mongodb
   become: yes
   tasks:  #install packages in loop with list of map
-    - name: install packages
+  - name: install packages
     ansible.builtin.yum:
       name: "{{item.name}}"
       state: "{{item.state}}"
