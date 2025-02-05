@@ -1,13 +1,13 @@
 - name: Data types in ansible
   hosts: localhost
   vars:
-    age: 40 # number
-    NAME: munikumar # string
-    isDevops: true # boolean
+  - age: 40 # number
+  - NAME: munikumar # string
+  - isDevops: true # boolean
   - skills: # list
-      aws
-      java
-      json
+    - aws
+    - java
+    - json
   - Experienc: # map
       aws: 7
       java: 8
